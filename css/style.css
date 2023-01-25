@@ -1,0 +1,234 @@
+body{
+    font-family: "Roboto",sans-serif;
+    margin: 0px;
+    height: 100%;
+}
+
+.header{
+    /* background: white; */
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+}
+.logo-icon{
+    display: none;
+    height: 16px;
+    width: 16px;
+}
+
+.header-conteiner{
+    max-width: 1280px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    gap: 60px;
+}
+.logo-img{
+    width: 79px;
+    height: 17px;
+}
+.search{
+    width: 100%;
+}
+.search-logo{
+    width: 16px;
+    height: 16px;
+}
+.search-form{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding-left: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 1px solid #EBEBF1;
+    border-radius: 5px;
+   
+}
+.search-input{
+    border: none;
+}
+.search-input::placeholder{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #BBC4D6;
+}
+.user-icon{
+    display: flex;
+    padding-left: 19px;
+    border-left: solid 1px #EBEBF1;
+    align-items: center;
+    gap: 10px;
+    
+}
+a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: right;
+    letter-spacing: 0.01em;
+    color: #768298;
+    text-decoration: none;
+}
+.user-icon-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.main-container{
+    max-width: 1280px;
+    margin: 0px auto;
+    padding-top: 70px;
+}
+h1{
+    margin: 0px;
+}
+.main-content-block{
+    text-align: center;
+}
+.main-content{
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    cursor: pointer;
+}
+.content-item{
+    border: 1px solid #EBEBF1;
+    border-radius: 5px;
+    width: 23%;
+    height: 120px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+}
+.content-item:nth-child(4){
+    margin-right: 0px;
+}
+.content-item:nth-child(7){
+    margin-right: 0px;
+}
+.item-1{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Henkel-Logo.svg/1024px-Henkel-Logo.svg.png);
+    background-size: 40%;
+}
+.item-2{
+    background-image: url(https://upload.wikimedia.org/wikipedia/ru/thumb/c/cf/John_Deere_logo.svg/1200px-John_Deere_logo.svg.png);
+    background-size: 80%;
+
+}
+.item-3{
+    background-image: url(https://cs9.pikabu.ru/post_img/big/2017/05/29/0/14960055821972076.jpg);
+    background-size: 40%;
+}
+.item-4{
+    background-image: url(https://static.tildacdn.com/tild6365-6361-4937-b861-656533303063/ikea_2019_logo.png);
+    background-size: 60%;
+}
+.item-5{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Reebok_delta_logo.svg/2560px-Reebok_delta_logo.svg.png);
+    background-size: 80%;
+}
+.item-6{
+    background-image: url(https://avatars.dzeninfra.ru/get-zen_doc/3987860/pub_603de4776bbac837cd50eff2_603de6566bbac837cd54880a/scale_1200);
+    background-size: 50%;
+}
+.item-7{
+    background-image: url(https://s7d2.scene7.com/is/image/Caterpillar/CM20200219-db34e-f70d2?fmt=png-alpha);
+    background-size: 80%;
+}
+
+@media(max-width:1190px){
+    .header-conteiner{
+        max-width: 728px;
+   }
+   .main-container{
+       max-width: 728px;
+   }
+    .content-item:nth-child(4){
+        margin-right: 20px;
+    }
+}
+
+@media(max-width:809px) {
+   
+    .content-item{
+        margin-right: 20px;
+        width: 31%;
+        margin-bottom: 20px;
+    }
+    .content-item:nth-child(3){
+        margin-right: 0px;
+    }
+    .content-item:nth-child(6){
+        margin-right: 0px;
+    }
+    
+}
+@media(max-width:622px){
+    .content-item:nth-child(3){
+        margin-right: 20px;
+    }
+    .content-item:nth-child(6){
+        margin-right: 20px;
+    }
+}
+@media (max-width:562px){
+    .header-conteiner{
+        flex-direction: column;
+        padding-bottom: 0px;
+        gap: 22.15px;
+        align-items: flex-start;
+        padding-top: 17px;
+   }
+   .logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+   .logo-icon{
+    display: block;
+    padding-right: 20.94px;
+   }
+   .logo-img{
+    padding-left: 20.94px;
+   }
+   .user-icon{
+    display: none;
+   }
+    .main-container{
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+   .search-form{
+    border-radius: 0px;
+   }
+   .main-content{
+    flex-direction: column;
+   }
+   .content-item{
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+   }
+   .content-item:nth-child(3){
+    margin-right: 0px;
+   }
+   .content-item:nth-child(6){
+    margin-right: 0px;
+   }
+   .content-item:nth-child(3){
+    margin-right: 0px;
+   }
+   .content-item:nth-child(4){
+    margin-right: 0px;
+   }
+
+}
